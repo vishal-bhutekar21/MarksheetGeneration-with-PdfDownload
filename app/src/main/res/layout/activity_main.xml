@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F4F6"
+
+    >
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:background="@android:color/white"
+
+
+        android:elevation="4dp"
+        android:backgroundTint="#FFFFFF"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+
+        android:gravity="center">
+
+        <!-- Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/clg_logo"
+                android:contentDescription="College logo with a detailed description of the logo design"
+                android:layout_marginEnd="16dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:gravity="center"
+                    android:text="@string/clgname"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#3B82F6" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Student Information Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Acedemic year :"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAcademicYear"
+                android:text="            "/><TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="     Acedemic Semester :"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSemester"
+                android:text=""/>
+        </LinearLayout>
+        <TextView
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Student Information"
+            android:textColor="#2563EB"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student Name: "
+                    android:textStyle="bold"
+                    android:textColor="#374151" />
+
+                <TextView
+                    android:id="@+id/tvStudentName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="John Doe"
+                    android:textColor="#374151" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enrollment Number: "
+                    android:textStyle="bold"
+                    android:textColor="#374151" />
+
+                <TextView
+                    android:id="@+id/tvEnrollmentNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EN123456789"
+                    android:textColor="#374151" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class/Year"
+                    android:textStyle="bold"
+                    android:textColor="#374151" />
+
+                <TextView
+                    android:id="@+id/tvClassGrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   10th Grade"
+                    android:textColor="#374151" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Department : "
+                    android:textStyle="bold"
+                    android:textColor="#374151" />
+
+                <TextView
+                    android:id="@+id/tvDepartment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Computer Science"
+                    android:textColor="#374151" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Email: "
+                    android:textStyle="bold"
+                    android:textColor="#374151" />
+
+                <TextView
+                    android:id="@+id/tvContactEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="john.doe@example.com"
+                    android:textColor="#374151" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Marks Table Section -->
+        <TextView
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marks Table"
+
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#2563EB"
+            android:layout_marginBottom="8dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+
+                <TableLayout
+                    android:id="@+id/tablelayoutresults"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1"
+                    android:background="#E0F2FE"
+                    android:layout_marginBottom="16dp">
+
+                    <TableRow
+                        android:background="#BFDBFE">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Subject Code"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:textColor="#374151"
+                            android:ellipsize="end"
+                            android:singleLine="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Subject Name"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:textColor="#374151"
+                            android:ellipsize="end"
+                            android:singleLine="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Maximum Marks"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:textColor="#374151"
+                            android:ellipsize="end"
+                            android:singleLine="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Marks Obtained"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:textColor="#374151"
+                            android:ellipsize="end"
+                            android:singleLine="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pass Marks"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:textColor="#374151"
+                            android:ellipsize="end"
+                            android:singleLine="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Remarks"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:textColor="#374151"
+                            android:ellipsize="end"
+                            android:singleLine="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Grade"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:textColor="#374151"
+                            android:ellipsize="end"
+                            android:singleLine="true" />
+                    </TableRow>
+
+                    <!-- Example Row -->
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CS101"
+                            android:padding="8dp"
+                            android:textColor="#374151"
+                            android:ellipsize="end"
+                            android:singleLine="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mathematics"
+                            android:padding="8dp"
+                            android:textColor="#374151"
+                            android:ellipsize="end"
+                            android:singleLine="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100"
+                            android:padding="8dp"
+                            android:textColor="#374151"
+                            android:ellipsize="end"
+                            android:singleLine="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="95"
+                            android:padding="8dp"
+                            android:textColor="#374151"
+                            android:ellipsize="end"
+                            android:singleLine="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="40"
+                            android:padding="8dp"
+                            android:textColor="#374151"
+                            android:ellipsize="end"
+                            android:singleLine="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pass"
+                            android:padding="8dp"
+                            android:textColor="#374151"
+                            android:ellipsize="end"
+                            android:singleLine="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="A+"
+                            android:padding="8dp"
+                            android:textColor="#374151"
+                            android:ellipsize="end"
+                            android:singleLine="true" />
+                    </TableRow>
+
+                    <!-- Add more rows as needed -->
+                </TableLayout>
+            </HorizontalScrollView>
+        </ScrollView>
+
+
+        <!-- Summary Section -->
+        <TextView
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Summary"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#2563EB"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Marks Obtained: "
+                    android:textStyle="bold"
+                    android:textColor="#374151" />
+
+                <TextView
+                    android:id="@+id/tvmarksobtained"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="548"
+                    android:textColor="#374151" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maximum Marks: "
+                    android:textStyle="bold"
+                    android:textColor="#374151" />
+
+                <TextView
+                    android:id="@+id/tvMaximumMarks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="600"
+                    android:textColor="#374151" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Percentage: "
+                    android:textStyle="bold"
+                    android:textColor="#374151" />
+
+                <TextView
+                    android:id="@+id/tvPercentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="91.33%"
+                    android:textColor="#374151" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Overall Grade: "
+                    android:textStyle="bold"
+                    android:textColor="#374151" />
+
+                <TextView
+                    android:id="@+id/tvoverallGrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A+"
+                    android:textColor="#374151" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Footer Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_marginBottom="16dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Authorized Signatory:"
+                android:textStyle="bold"
+                android:layout_marginRight="040dp"
+                android:textColor="#374151" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Issue: "
+                android:textStyle="bold"
+                android:textColor="#374151" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="10sp"
+                android:id="@+id/timenow"
+                android:textColor="#374151" />
+
+
+
+
+
+        </LinearLayout>
+
+        <!-- Download Button -->
+        <ImageView
+            android:layout_width="94dp"
+            android:layout_height="42dp"
+            android:layout_gravity="start"
+            android:src="@drawable/signature"
+            android:textColor="#374151" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Generated by the College Management System\n by Vishal Bhutekar"
+            android:textSize="12sp"
+            android:textColor="#9CA3AF"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Download Marksheet"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#ABF03333"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:drawablePadding="8dp"
+            android:padding="12dp"
+            android:elevation="4dp"
+            android:id="@+id/button"
+
+
+            android:layout_marginBottom="20dp"
+            />
+    </LinearLayout>
+
+
+</ScrollView>
